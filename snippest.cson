@@ -1,0 +1,55 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+'.source.js':
+  'Console log':
+    'prefix': 'cl'
+    'body': 'console.log($1);'
+  'then':
+    'prefix': 'then'
+    'body': 'then(() => {\n  ${0}\n});'
+  'module-import':
+    'prefix': 'im'
+    'body': 'import ${1} from ${2};'
+  'module-export':
+    'prefix': 'ex'
+    'body': 'export ${0};'
+  'module-export-default':
+    'prefix': 'ed'
+    'body': 'export default ${0};'
+  'mocha-context':
+    'prefix': 'con'
+    'body': 'context(\'${1}\', function() {\n  ${0}\n});'
+  'mocha-describe':
+    'prefix': 'des'
+    'body': 'describe(\'${1}\', function() {\n  ${0}\n});'
+  'mocha-before-each':
+    'prefix': 'bef'
+    'body': 'beforeEach(function() {\n  ${0}\n});'
+  'mocha-it':
+    'prefix': 'it'
+    'body': 'it(\'${1}\', function() {\n  ${0}\n});'
+  'ember-setter':
+    'prefix': 'ts'
+    'body': 'this.set(\'${1}\', ${2});'
+  'ember-getter':
+    'prefix': 'tg'
+    'body': 'this.get(\'${0}\');'
+  'catch':
+    'prefix': 'catch'
+    'body': 'catch(() => {\n  ${0}\n});'
