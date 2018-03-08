@@ -11,10 +11,9 @@ alias grbo "git rebase origin/master"
 alias ga "git add ."
 alias ets "ember test --serve --no-launch"
 
-alias bi "bower install"
-alias ni "npm install"
-
-source ~/.config/fish/nvm-wrapper/nvm.fish
+function nvm
+   bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end
 
 function unparanoidify
   heroku sudo clients:update "dashboard-staging-pr-$argv" --can-skip-paranoid-check true
