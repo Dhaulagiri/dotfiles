@@ -15,10 +15,6 @@ function nvm
    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
 end
 
-function unparanoidify
-  heroku sudo clients:update "dashboard-staging-pr-$argv" --can-skip-paranoid-check true
-end
-
 function grb
   git rebase -i head~$argv
 end
