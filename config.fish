@@ -26,3 +26,7 @@ end
 function yu
   yarn upgrade $argv --latest; yarn upgrade $argv
 end
+
+alias fixcam "sudo killall VDCAssistant"
+alias nvmd "nvm use default"
+alias brewu "brew update; brew upgrade; brew cleanup"
