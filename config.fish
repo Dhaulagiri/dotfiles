@@ -11,10 +11,6 @@ alias grbo "git rebase origin/master"
 alias ga "git add ."
 alias ets "ember test --serve --no-launch"
 
-function nvm
-   bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
-end
-
 function grb
   git rebase -i head~$argv
 end
@@ -28,5 +24,6 @@ function yu
 end
 
 alias fixcam "sudo killall VDCAssistant"
-alias nvmd "nvm use default"
 alias brewu "brew update; brew upgrade; brew cleanup"
+
+source /usr/local/opt/asdf/asdf.fish
