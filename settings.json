@@ -1,0 +1,102 @@
+{
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.colorDecorators": false,
+    "editor.smoothScrolling": true,
+    "editor.wordWrap": "on",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "line-thin",
+    "editor.minimap.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true,
+    },
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Dracula",
+    "git.autofetch": true,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/public/dist": true,
+        "**/.vscode": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[handlebars]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "editor.tabSize": 2,
+        "editor.fontFamily": "IBM Flex, Menlo, Monaco, 'Courier New', monospace",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "redhat.telemetry.enabled": false,
+    "go.toolsManagement.autoUpdate": true,
+    // "[scss]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    //     "editor.formatOnSave": true
+    // },
+    "security.workspace.trust.untrustedFiles": "open",
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    // "stylelint.validate": [
+    //     "scss"
+    // ],
+    "window.zoomLevel": 1,
+      "stylelint.packageManager": "yarn",
+    "stylelint.reportNeedlessDisables": true,
+    "stylelint.validate": [
+        "css",
+        "less",
+        "postcss",
+        "scss"
+    ],
+    "stylelint.snippet": [
+        "css",
+        "less",
+        "postcss",
+        "scss"
+    ],
+    "githubPullRequests.pullBranch": "never",
+    "gitlens.rebaseEditor.ordering": "asc",
+    "[glimmer-js]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.foldingStrategy": "indentation"
+    },
+    "[glimmer-ts]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.foldingStrategy": "indentation"
+    },
+    "eslint.validate": [
+        "glimmer-ts",
+        "glimmer-js"
+    ],
+    "eslint.rules.customizations": [
+        {
+            "rule": "*",
+            "severity": "warn"
+        }
+    ],
+    "git.openRepositoryInParentFolders": "always",
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    },
+    "prettier.documentSelectors": [
+        "**/*.gts",
+        "**/*.gjs"
+    ],
+    "workbench.settings.applyToAllProfiles": [
+        "prettier.enable"
+    ],
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.format.insertSpaceAfterTypeAssertion": true,
+}
