@@ -10,34 +10,20 @@ alias grba "git rebase --abort"
 alias grbo "git rebase origin/master"
 alias grbm "git rebase origin/main"
 alias ga "git add ."
-
-alias ets "ember test --serve --no-launch"
+alias pi "pnpm i"
 
 function grb
   git rebase -i head~$argv
 end
 
-# function etf
-#   ember t --server --filter="$argv"
-# end
-
-# function yu
-#   yarn upgrade $argv --latest; yarn upgrade $argv
-# end
-
-# alias fixcam "sudo killall VDCAssistant"
-# alias nvmd "nvm use default"
-
 alias brewu "brew update; brew upgrade; brew cleanup"
 alias bi "brew install $argv"
 alias bui "brew uninstall $argv"
 
-
-# source ~/.asdf/asdf.fish
-alias agnode "asdf global nodejs $argv"
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+alias agnode "asdf set nodejs $argv"
 alias alnode "asdf local nodejs $argv"
 alias agruby "asdf global ruby $argv"
 alias alruby "asdf local ruby $argv"
 
-alias ci "code-insiders $argv"
-source /usr/local/opt/asdf/libexec/asdf.fish
+alias ci "code $argv"
